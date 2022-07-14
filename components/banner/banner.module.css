@@ -1,0 +1,86 @@
+.container {
+margin-bottom: 6rem;
+}
+
+.title {
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.title span {
+  color: var(--var-secondary);
+}
+
+.subTitle {
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.button {
+  margin-top: 1.25rem;
+  background-color: var(--var-secondary);
+  cursor: pointer;
+  color: rgb(235,245,230);
+  outline: 0px;
+  border: 0px;
+
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  box-shadow: inset 0 0 0 0 rgb(235,245,230);
+  transition: ease-out 0.4s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: inset 400px 0 0 0 rgb(235,245,230);
+  color: var(--var-secondary);
+  border: 1px solid var(--var-secondary);
+}
+
+/** sm breakpoint **/
+@media (min-width: 640px) {
+  .subTitle {
+    margin-top: 1.25rem;
+    max-width: 36rem;
+  }
+
+}
+
+/** md breakpoint **/
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.75rem /* 60px */;
+    line-height: 1;
+  }
+
+  .subTitle {
+    margin-top: 1.25rem;
+    font-size: 1.35rem;
+  }
+
+  .button {
+    font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+  }
+}
+
+/** lg breakpoint **/
+@media (min-width: 1024px) {
+  .container {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 4.5rem /* 72px */;
+    line-height: 1;
+  }
+
+  .subTitle {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 1.5rem;
+  }
+}
